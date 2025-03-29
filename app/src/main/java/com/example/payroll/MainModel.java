@@ -10,6 +10,7 @@ public class MainModel {
     Object deductions;
     int netSalary;
 
+    //Full Time Employees
     public MainModel(String employeeID, String name, String employeeType, int workHours, int workDays, int monthlySalary, Object deductions, int netSalary) {
         this.employeeID = employeeID;
         this.name = name;
@@ -19,6 +20,23 @@ public class MainModel {
         this.monthlySalary = monthlySalary;
         this.deductions = deductions;
         this.netSalary = netSalary;
+    }
+
+    //Part Time Employees
+    public MainModel(String employeeID, String name, String employeeType, int workHours, int monthlySalary, int netSalary) {
+        this.employeeID = employeeID;
+        this.name = name;
+        this.employeeType = employeeType;
+        this.workHours = workHours;
+        this.monthlySalary = monthlySalary;
+        this.netSalary = netSalary;
+    }
+
+    //Employee Registration
+    public MainModel(String employeeID, String name, String employeeType) {
+        this.employeeID = employeeID;
+        this.name = name;
+        this.employeeType = employeeType;
     }
 
     public String getEmployeeID() {
