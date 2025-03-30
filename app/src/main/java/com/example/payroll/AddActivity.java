@@ -46,7 +46,7 @@ public class AddActivity extends AppCompatActivity {
                 try {
                     MainModel model = new MainModel(etID.getText().toString(), etName.getText().toString() ,
                             spinnerEmpType.getSelectedItem().toString());
-                    if (!etName.getText().toString().trim().equals("") && !etID.getText().toString().trim().equals("")) {
+                    if (!etName.getText().toString().equals("") && !etID.getText().toString().equals("")) {
                         ref.push().setValue(model).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
