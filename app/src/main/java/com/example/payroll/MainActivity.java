@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
                     transaction.setReorderingAllowed(true);
 
-                    transaction.replace(R.id.frame_layout, selectedFragment);
+                    transaction.replace(R.id.fragmentContainerView, selectedFragment);
 
                     transaction.commit();
 
