@@ -15,23 +15,32 @@
         android:layout_gravity="center_vertical">
 
             <TextView
-                android:id="@+id/textTitle"
+                android:id="@+id/textName"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="Title"
+                android:text="Name: "
                 android:textStyle="bold"
                 android:textSize="22dp"
                 android:gravity="center_vertical"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/textDescription"
+                android:id="@+id/textEmployeeID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description"
-                android:layout_below="@+id/textTitle"
+                android:text="Employee ID: "
+                android:layout_below="@+id/textName"
                 android:textSize="16dp"
                 android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textEmployeeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Type: "
+            android:layout_below="@+id/textEmployeeID"
+            android:textSize="16dp"
+            android:textColor="@color/black" />
 
     </RelativeLayout>
 

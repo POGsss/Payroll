@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
     BottomAppBar bottomAppBar;
     BottomNavigationView bottomNavigationView;
     FloatingActionButton fabAdd;
-    MainAdapter mainAdapter;
-    RecyclerView outputRv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         bottomAppBar = findViewById(R.id.bottomAppBar);
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         fabAdd = findViewById(R.id.fabAdd);
-        outputRv = findViewById(R.id.outputRV);
 
         // Floating Button Functionality
         fabAdd.setOnClickListener(new View.OnClickListener() {
@@ -88,17 +85,5 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-        // Default Query By Employee Name
-        Query query = FirebaseDatabase.getInstance().getReference().child("data").orderByChild("name");
-
-        // Firebase Adapter
-        FirebaseRecyclerOptions<MainModel> options =
-                new FirebaseRecyclerOptions.Builder<MainModel>()
-                        .setQuery(query, MainModel.class)
-                        .build();
-
-        mainAdapter = new MainAdapter(options);
-        outputRv.setAdapter(mainAdapter);
     }
 }
