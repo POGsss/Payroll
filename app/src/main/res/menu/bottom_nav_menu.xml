@@ -12,6 +12,7 @@
         android:icon="@drawable/groups_24px"/>
     <item
         android:id="@+id/fab"
+        android:enabled="false"
         android:title="" />
     <item
         android:id="@+id/payroll"

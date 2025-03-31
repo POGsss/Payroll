@@ -8,12 +8,7 @@
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/outputRV"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
+        android:layout_height="match_parent"/>
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -35,7 +30,7 @@
                 android:background="@android:color/transparent"
                 app:menu="@menu/bottom_nav_menu"
                 app:labelVisibilityMode="labeled"
-                android:elevation="10dp"/>
+                android:elevation="0dp"/>
         </com.google.android.material.bottomappbar.BottomAppBar>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabAdd"
