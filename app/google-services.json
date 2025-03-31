@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "231697339934",
-    "project_id": "payroll-c27cf",
-    "storage_bucket": "payroll-c27cf.firebasestorage.app"
+    "project_number": "522498810584",
+    "firebase_url": "https://zhyyyy-e66db-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "zhyyyy-e66db",
+    "storage_bucket": "zhyyyy-e66db.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:231697339934:android:c87cbe1c7f1fcaeb83800f",
+        "mobilesdk_app_id": "1:522498810584:android:825412b6759e82169aedad",
         "android_client_info": {
           "package_name": "com.example.payroll"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDQ4imGtJCUB01jfIRtihEvg5zAeKfc4ak"
+          "current_key": "AIzaSyA7s7XSJBjY8HJUKqVN8d-2N1MHIBhoDdc"
         }
       ],
       "services": {

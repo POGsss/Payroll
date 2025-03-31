@@ -39,6 +39,11 @@ public class MainModel {
         this.employeeType = employeeType;
     }
 
+    // Empty Constructor
+    public MainModel() {
+
+    }
+
     public String getEmployeeID() {
         return employeeID;
     }

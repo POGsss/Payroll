@@ -1,7 +1,5 @@
 package com.example.payroll;
-
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -77,6 +75,9 @@ public class DashboardFragment extends Fragment {
         // Initialization
         outputRv = view.findViewById(R.id.outputRV);
 
+        // Layout Manager
+        outputRv.setLayoutManager(new LinearLayoutManager(getContext()));
+
         // Default Query By Employee Name
         Query query = FirebaseDatabase.getInstance().getReference().child("database").child("employees").orderByChild("name");
 
@@ -86,10 +87,14 @@ public class DashboardFragment extends Fragment {
                         .setQuery(query, MainModel.class)
                         .build();
 
-        // Layout Manager
-        outputRv.setLayoutManager(new LinearLayoutManager(getContext()));
-
+        // Setting Adapter
         mainAdapter = new MainAdapter(options);
         outputRv.setAdapter(mainAdapter);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mainAdapter.startListening();
     }
 }
