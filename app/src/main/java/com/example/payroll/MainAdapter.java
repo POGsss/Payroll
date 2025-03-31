@@ -1,12 +1,9 @@
 package com.example.payroll;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
@@ -34,7 +31,6 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel, MainAdapter.
 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
-
 
         }
     }
